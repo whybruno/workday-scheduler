@@ -1,0 +1,13 @@
+/* accessing the LEXAND on google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+
+/* declaring global CSS variables */
+:root {
+  --color-1: #F230F2;
+  --color-2: #1A1AFF;
+  --color-3: #010101;
+  --color-4: #171717;
+  --color-5: #FAFAFA;
+  --color-6: #FF6961;
+  --color-7: #A2A5DC;
+}
