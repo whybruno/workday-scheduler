@@ -48,4 +48,20 @@ $(document).ready(function() {
     localStorage.setItem(timeBlock, descriptionVal);
   });
 
+  // loop through all elements with .time-block class
+  $('.time-block').each(function() {
+    // gets the element ID
+    const timeBlockID = $(this).closest('.time-block').text();
+    // gets the event stored in localStorage
+    const event = localStorage.getItem(timeBlockID);
+
+    // if the event exists
+    if (event) {
+      // gets the corresponding .description element
+      const description = $(this).siblings('.description');
+      // sets the value of the .description element for the event
+      description.val(event);
+    }
+  });
+
 });
