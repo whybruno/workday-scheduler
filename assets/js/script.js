@@ -38,4 +38,14 @@ $(document).ready(function() {
   updateHour();
   setInterval(updateHour, 60000);
 
+  // adds the text from the corresponding '.description' to the localStorage
+  $('.btn-add').on('click', function() {
+    // extracts the text from the .time-block element
+    const timeBlock = $(this).siblings('.time-block').text();
+    // extracts the text from the .description element
+    const descriptionVal = $(this).siblings('.description').val();
+    // store event data in localStorage
+    localStorage.setItem(timeBlock, descriptionVal);
+  });
+
 });
