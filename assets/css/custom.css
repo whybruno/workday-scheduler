@@ -11,3 +11,33 @@
   --color-6: #FF6961;
   --color-7: #A2A5DC;
 }
+
+/* GLOBAL styling */
+* {
+  font-family: 'Lexend', sans-serif;
+}
+
+/* <body> tag styling */
+body {
+  background-color: var(--color-3);
+}
+
+/* <h1> tag styling */
+h1 {
+  background: #f230f2;
+  background: linear-gradient(to right, #F230F2 40%, #1A1AFF 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* <p> tag styling */
+p {
+  color: var(--color-5);
+  font-size: var(--size-2);
+  font-weight: 300;
+}
+
+/* <b> tag styling */
+b {
+  font-weight: 700;
+}
