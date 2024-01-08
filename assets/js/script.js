@@ -77,4 +77,20 @@ $(document).ready(function() {
     $(this).siblings('.description').val('');
   });
 
+  // clears all event descriptions from the localStorage
+  $('.btn-clear-all').on("click", function() {
+    // remove all data stored in the localStorage
+    localStorage.clear();
+    
+    // iterates through all elements with the class .description
+    $('.description').each(function() {
+      // retrieves the corresponding button ID
+      const timeBlockButton = $(this).closest(".row").find("button.time-block").attr("id");
+      
+      // removes all saved event data
+      localStorage.removeItem(timeBlockButton);
+      // sets the value of the .description element to an empty string
+      $(this).val("");
+    });
+  });
 });
