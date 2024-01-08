@@ -41,3 +41,41 @@ p {
 b {
   font-weight: 700;
 }
+
+/* styling of .hour */
+.hour {
+  background-color: var(--color-1);
+  border-radius: 0;
+  border-style: none;
+  color: var(--color-5);
+  cursor: default !important;
+}
+
+/* styling of .past */
+.past {
+  background-color: var(--color-5);
+  color: var(--color-4);
+}
+
+/* styling of .present */
+.present {
+  background-color: var(--color-6);
+  color: var(--color-4);
+}
+
+/* styling of .future */
+.future {
+  background-color: var(--color-7);
+  color: var(--color-4);
+}
+
+/* styling of textarea */
+textarea {
+  background-color: var(--color-4);
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  color: var(--color-5);
+  font-weight: 300;
+  outline-style: none;
+}
