@@ -64,4 +64,17 @@ $(document).ready(function() {
     }
   });
 
+  // removes the corresponding event data from the localStorage
+  $('.btn-clear').on("click", function() {
+    // extracts the text from the .time-block element 
+    let timeBlockText = $(this).siblings('.time-block').text();
+    // extracts the text from the .description element 
+    let descriptionValue = $(this).siblings('.description').val();
+    
+    // removes the saved events data from the localStorage
+    localStorage.removeItem(timeBlockText, descriptionValue);
+    // sets the value of the .description element to an empty string
+    $(this).siblings('.description').val('');
+  });
+
 });
