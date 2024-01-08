@@ -79,3 +79,37 @@ textarea {
   font-weight: 300;
   outline-style: none;
 }
+
+/* styling of .btn-clear-all */
+.btn-clear-all {
+  background-color: var(--color-2);
+  color: var(--color-5);
+}
+.btn-clear-all:hover {
+  border: 1px solid var(--color-2);
+  color: var(--color-5);
+}
+
+/* styling of .btn-add */
+.btn-add {
+  border: 2px solid var(--color-1);
+  border-radius: 0;
+  color: var(--color-5);
+}
+.btn-add:hover {
+  border: 2px solid var(--color-1);
+  border-radius: 0;
+  color: var(--color-1);
+}
+
+/* styling of .btn-clear */
+.btn-clear {
+  border: 2px solid var(--color-2);
+  border-radius: 0;
+  color: var(--color-5);
+}
+.btn-clear:hover {
+  border: 2px solid var(--color-2);
+  border-radius: 0;
+  color: var(--color-2);
+}
